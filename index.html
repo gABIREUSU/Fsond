@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Fsound</title>
+    <style>
+        @charset "UTF-8";
+
+        @font-face {
+            font-family: 'Quest';
+            src: url(./fontes/Questrial-Regular.ttf);
+
+        }
+
+        @font-face {
+            font-family: 'DM';
+            src: url(./fontes/DMSans-VariableFont_opsz\,wght.ttf);
+        }
+
+        * {
+            padding: 0px;
+            border: 0px;
+            margin: 0px;
+        }
+        body {
+            background-image: url(Images/IMG_0810.PNG);
+            background-repeat: no-repeat;
+            background-size: 70%;
+            background-position: center 17rem;
+        }
+
+        .imagem {
+            text-align: center;
+            width: 100%;
+            scale: 60%;
+            padding: 10px 25px;
+        }
+
+        #fsound {
+            scale: 90%;
+            margin: 3rem 0rem -16rem -1rem;
+        }
+
+        #saibamais {
+            margin: -10rem 0rem 0rem -1rem;
+            scale: 100%;
+        }
+
+        .texto {
+            color: black;
+            text-align: center;
+            margin: 15rem;
+            font-size: 10.6rem;
+            font-family: 'DM';
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-family: 'Quest';
+            color: black;
+            padding-bottom: 5px;
+            position: relative;
+            font-size: 1.6rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            text-shadow: 0 0 1px black;
+        }
+
+        header {
+            width: 100%;
+            background-color: transparent;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10%;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1366px) {
+
+            .texto {
+                color: black;
+                text-align: center;
+                margin: 15rem;
+                font-size: 5rem;
+                font-family: 'DM';
+            }
+
+        }
+
+        @media screen and (min-width: 820px) and (max-width: 1180px) {
+
+            .texto {
+                color: black;
+                text-align: center;
+                margin: 15rem;
+                font-size: 5rem;
+                font-family: 'DM';
+            }
+
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 768px) {
+
+            body {
+                background-image: url(Images/IMG_0810\ vertical.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 40%;
+            }
+
+            header {
+                width: 80%;
+                padding: 1.25em 0.625em 0.625em 2.875em;
+            }
+
+            #fsound {
+                scale: 90%;
+                margin-top: -3rem;
+                margin-bottom: -10rem;
+                margin-right: 2.5rem;
+
+            }
+
+            .texto {
+                font-size: 2rem;
+                text-align: 60vw 35vh;
+            }
+
+            #saibamais {
+                margin: 50rem 3rem 0rem 4.5rem;
+                scale: 50%;
+
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul><!--Arrumar os links de redirecionamento-->
+                <li><a href="./index.html">Início</a></li>
+                <li><a href="./pages/sobre.html">Sobre</a></li>
+                <li><a href="./pages/landingpage.html">Entrar</a></li>
+                <li><a href="./pages/precos.html">Preços</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="grid-container">
+        <div class="imagem" id="fsound">
+            <img src="Images/IMG_0812.PNG" alt="fsound">
+        </div>
+
+
+        <div class="texto">
+            <p>Música para todos<br> os momentos</p>
+        </div>
+
+
+
+        <div class="imagem" id="saibamais">
+            <a href="https://orteil.dashnet.org/cookieclicker/">
+                <img src="Images/IMG_0811.PNG" alt="saibamais">
+            </a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

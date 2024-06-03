@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<!-- saved from url=(0093)file:///C:/Users/jrwel/OneDrive/Desktop/Codigos/projetoshtml/Trabaio/pre%C3%A7os.html#contato -->
+<html lang="pt-BR">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title>Preços</title>
+
+    <style>
+        @charset "UTF-8";
+
+        @font-face {
+            font-family: 'Quest';
+            src: url(../fontes/Questrial-Regular.ttf);
+        }
+        @font-face {
+            font-family: 'DM';
+            src: url(../fontes/DMSans-VariableFont_opsz\,wght.ttf);
+        }
+        a{
+            font-family: 'Quest';
+        }
+        body {
+            max-width: 1000vw;
+            max-height: 100vh;
+        }
+
+        ul {
+            margin: 10px;
+            padding: 0;
+
+        }
+
+        header {
+            margin: 10px;
+            border: 10px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column-reverse
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            margin-left: auto;
+            margin-right: auto;
+            display: inline-flex;
+            margin: 7px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+            border-bottom: 1px solid transparent;
+            transition: all 0.5s ease;
+            padding-right: 55px;
+            padding-left: 55px;
+        }
+
+        nav ul li a:hover {
+            border-color: black;
+        }
+
+        h1 {
+            font-family: 'DM';
+        }
+
+        p {
+            font-family: 'Quest';
+        }
+
+        .container {
+            display: flex;
+
+        }
+
+        .grid1 {
+            border-radius: 15px;
+            text-align: center;
+            background-color: white;
+            width: 8cm;
+            height: 12cm;
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin-left: auto;
+            padding-bottom: 5%;
+            padding-left: 10px;
+            padding-right: 10px;
+            transition: background-color 0.5s ease;
+            transition: color 0.5s ease;
+
+        }
+
+        .grid2 {
+            height: 10cm;
+            border-radius: 15px;
+            text-align: center;
+            background-color: white;
+            width: 8cm;
+            height: 12cm;
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin-left: 2vw;
+            margin-right: 2vw;
+            padding-left: 10px;
+            padding-right: 10px;
+            transition: background-color 0.5s ease;
+            transition: color 0.5s ease;
+
+
+
+        }
+
+        .grid3 {
+            position: static;
+            height: 10cm;
+            border-radius: 15px;
+            text-align: center;
+            background-color: white;
+            width: 8cm;
+            height: 12cm;
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin-right: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+            transition: background-color 0.5s ease;
+            transition: color 0.5s ease;
+
+        }
+
+        .button1 {
+            position: relative;
+            right: -7px;
+            top: 125px;
+            background-color: rgb(149, 0, 149);
+            border: none;
+            border-radius: 20px;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+            transition: border 0.5s ease;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .button2 {
+            position: relative;
+            right: -7px;
+            background-color: rgb(149, 0, 149);
+            border: none;
+            border-radius: 20px;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+            transition: border 0.5s ease;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .button3 {
+            position: relative;
+            right: -5px;
+            top: 71px;
+            background-color: rgb(149, 0, 149);
+            border: none;
+            border-radius: 20px;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+            transition: border 0.5s ease;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .ti1 {
+            background-color: black;
+            border: none;
+            border-radius: 20px;
+            color: #fff;
+            padding: 10px 5px;
+            font-size: 18px;
+            transition: background-color 0.5s ease;
+            list-style-type: none;
+            z-index: 2;
+            transition: border 0.5s ease;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .ti2 {
+            background-color: gold;
+            border: none;
+            border-radius: 20px;
+            color: #fff;
+            padding: 10px 5px;
+            font-size: 18px;
+            transition: background-color 0.5s ease;
+            list-style-type: none;
+            z-index: 2;
+            transition: border 0.5s ease;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+
+
+        .button1:hover {
+            background-color: purple;
+            border: 2px solid white;
+        }
+
+        .button2:hover {
+            background-color: purple;
+            border: 2px solid white;
+        }
+
+        .button3:hover {
+            background-color: purple;
+            border: 2px solid white;
+        }
+
+        .grid1:hover {
+            background-color: rgb(52, 0, 86);
+            color: white;
+        }
+
+        .grid2:hover {
+            background-color: rgb(52, 0, 86);
+            color: white;
+
+        }
+
+        .grid3:hover {
+            background-color: rgb(52, 0, 86);
+            color: white;
+
+        }
+
+        .a1 {
+            position: absolute;
+            z-index: -1;
+            bottom: 33vh;
+            left: -15vw;
+            max-width: 10cm;
+            width: 30vw;
+            min-width: 8cm;
+        }
+
+        .a2 {
+            position: absolute;
+            margin-top: 20px;
+            right: -84px;
+            max-width: 10cm;
+            width: 30vw;
+            min-width: 8cm;
+        }
+
+        .t1 {
+            text-align: center;
+            position: relative;
+            top: 0;
+        }
+
+        @media screen and (min-width:200px) and (max-width: 915px) {
+
+
+            .p {
+                margin: 10px;
+
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+
+
+            }
+
+            .grid1 {
+                border-radius: 15px;
+                text-align: center;
+                background-color: white;
+                width: 8cm;
+                height: 12cm;
+                border: 2px solid black;
+                box-sizing: border-box;
+                margin-left: 10vw;
+                padding-bottom: 5%;
+                padding-left: 10px;
+                padding-right: 10px;
+                transition: background-color 0.5s ease;
+                transition: color 0.5s ease;
+                margin-right: auto;
+                margin-left: auto;
+                margin-bottom: 3vw;
+
+            }
+
+            .grid2 {
+                height: 12cm;
+                border-radius: 15px;
+                text-align: center;
+                background-color: white;
+                width: 8cm;
+                border: 2px solid black;
+                box-sizing: border-box;
+                margin-left: 10vw;
+                margin-right: 10vw;
+                padding-left: 10px;
+                padding-right: 10px;
+                transition: background-color 0.5s ease;
+                transition: color 0.5s ease;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 3vw;
+
+
+
+
+            }
+
+            .grid3 {
+                position: static;
+                height: 12cm;
+                border-radius: 15px;
+                text-align: center;
+                background-color: white;
+                width: 8cm;
+                border: 2px solid black;
+                box-sizing: border-box;
+                margin-right: 10vw;
+                padding-left: 10px;
+                padding-right: 10px;
+                transition: background-color 0.5s ease;
+                transition: color 0.5s ease;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 3vw;
+
+
+            }
+
+
+
+            .ti1 {
+                text-align: center;
+                align-items: center;
+                background-color: black;
+                border: none;
+                border-radius: 20px;
+                color: #fff;
+                padding: 0.5cm 1.35cm;
+                font-size: 18px;
+                transition: background-color 0.5s ease;
+                list-style-type: none;
+                z-index: 2;
+                transition: border 0.5s ease;
+                margin-right: auto;
+                margin-left: auto;
+                margin: 1vw;
+
+            }
+
+            .ti2 {
+                background-color: gold;
+                border: none;
+                border-radius: 20px;
+                color: #fff;
+                padding: 0.5cm 1.35cm;
+                font-size: 18px;
+                transition: background-color 0.5s ease;
+                list-style-type: none;
+                z-index: 2;
+                transition: border 0.5s ease;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    </style>
+    <style type="text/css" id="operaUserStyle"></style>
+</head>
+<header>
+
+    <nav>
+        <ul>
+            <li><a class="p"
+                    href="../index.html">INÍCIO</a>
+            </li>
+
+            <li><a class="p"
+                    href="../pages/sobre.html">SOBRE</a>
+            </li>
+
+            <li><a class="p"
+                    href="../pages/precos.html">PREÇOS</a>
+            </li>
+
+            <li><a class="p"
+                    href="../pages/landingpage.html">ENTRAR</a>
+            </li>
+
+
+        </ul>
+    </nav>
+
+</header>
+
+<body>
+
+    <h1 class="t1">DESCUBRA NOSSOS PLANOS</h1>
+
+    <br><br><br><br>
+
+    <script src="file:///C:/Users/jrwel/OneDrive/Desktop/Codigos/projetoshtml/Trabaio/script.js"></script>
+    <div class="container">
+
+        <div class="grid1">
+            <h1 class="ti1">Basico</h1>
+            <h1>$10.99</h1>
+            <p>mensal</p>
+            <p>-Visualização de até 20 perfis por dia
+                3 matches por dia</p>
+            <nav>
+                <ul>
+                    <li><a href="file:///C:/Users/jrwel/OneDrive/Desktop/Codigos/projetoshtml/Trabaio/pre%C3%A7os.html#contato"
+                            class="button1">Escolher</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="grid2">
+            <h1 class="ti2">Gold</h1>
+            <h1>$36.99</h1>
+            <p>mensal</p>
+            <p>-Visualização de até 50 perfis por dia 10 matches diários </p>
+            <p>-Acesso ao filtro de pesquisa</p>
+            <p>-Badge de verificação</p>
+            <p>-Suporte prioritário</p>
+            <br>
+            <nav>
+                <ul>
+                    <li><a href="file:///C:/Users/jrwel/OneDrive/Desktop/Codigos/projetoshtml/Trabaio/pre%C3%A7os.html#contato"
+                            class="button2">Escolher</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="grid3">
+            <h1 class="ti1">Pro</h1>
+            <h1>$23.99</h1>
+            <p>mensal</p>
+            <p>-visualização de perfis ilimitados </p>
+            <p>-matches prioritários</p>
+            <p>- promova seu perfil e anúncios no site</p>
+            <nav>
+                <ul>
+                    <li><a href="file:///C:/Users/jrwel/OneDrive/Desktop/Codigos/projetoshtml/Trabaio/pre%C3%A7os.html#contato"
+                            class="button3">Escolher</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

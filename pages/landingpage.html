@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)file:///D:/Area/Fsond/pages/landingpage.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title>Landing Page</title>
+
+    <style>
+        @charset "UTF-8";
+
+        @font-face {
+            font-family: 'Quest';
+            src: url(../fontes/Questrial-Regular.ttf);
+
+        }
+
+        @font-face {
+            font-family: 'DM';
+            src: url(../fontes/DMSans-VariableFont_opsz\,wght.ttf);
+        }
+
+        body {
+            max-width: 1000vw;
+            max-height: 100vh;
+
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-family: 'Quest';
+            color: black;
+            padding-bottom: 5px;
+            position: relative;
+            font-size: 1.6rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            text-shadow: 0 0 1px black;
+        }
+
+        header {
+            width: 100%;
+            background-color: transparent;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10%;
+        }
+
+        h1 {
+            font-family: 'DM';
+        }
+
+        p {
+            font-family: 'Quest';
+        }
+
+        .container {
+            display: flex;
+
+        }
+
+        .grid1 {
+            position: relative;
+            border-radius: 5px;
+            text-align: center;
+            background-color: #FDDD00;
+            width: 35vw;
+            height: 10cm;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            margin: 6%;
+            padding-bottom: 5%;
+            padding-left: 10px;
+            padding-right: 1px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .grid2 {
+            height: 10cm;
+            border-radius: 5px;
+            text-align: center;
+            background-color: #FF8A08;
+            width: 35vw;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            margin: 6%;
+            padding-left: 10px;
+            padding-right: 1px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .button {
+            position: relative;
+            top: 2cm;
+            list-style: none;
+            text-decoration: none;
+            background-color: black;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            padding: 2vw 5vw;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+            list-style-type: none;
+            z-index: 2;
+
+        }
+
+        .button:hover {
+            background-color: rgb(103, 99, 99);
+        }
+
+        .a1 {
+            position: absolute;
+            z-index: -1;
+            bottom: 12vw;
+            left: 0px;
+            max-width: 10cm;
+            width: 30vw;
+
+        }
+
+        .a2 {
+            position: absolute;
+            margin-top: 35px;
+            right: 0px;
+            max-width: 10cm;
+            width: 30vw;
+
+        }
+
+        @media screen and (min-width:400px) and (max-width: 750px) {
+            .a1 {
+                position: absolute;
+                z-index: -1;
+                bottom: 20vw;
+                left: 0px;
+                width: 35vw;
+            }
+
+            .a2 {
+                position: absolute;
+                margin-top: 0;
+                right: 0px;
+                width: 35vw;
+            }
+        }
+
+        @media screen and (min-width:200px) and (max-width: 400px) {
+            .a1 {
+                position: absolute;
+                z-index: -1;
+                bottom: 41vw;
+                left: 0px;
+                width: 35vw;
+            }
+
+            .a2 {
+                position: absolute;
+                margin-top: 0;
+                right: 0px;
+                width: 35vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">INÍCIO</a></li>
+                <li><a href="./sobre.html">SOBRE</a></li>
+                <li><a href="./precos.html">PREÇOS</a></li>
+                <li><a href="./landingpage.html">ENTRAR</a></li>
+
+
+            </ul>
+        </nav>
+
+
+    </header>
+    <img class="a2" src="../Images/3bolasnosaco - Copia.png" alt="">
+    <br><br><br><br>
+
+    <script src="file:///D:/Area/Fsond/pages/script.js"></script>
+    <div class="container">
+        <div class="grid1">
+            <h1>Empresa</h1>
+            <p>Clique aqui caso seja uma Empresa a contratar</p>
+            <nav>
+                <ul>
+                    <li><a href="./formularioIniEmp.html" class="button">Registrar</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="grid2">
+            <h1>Músico</h1>
+            <p>Clique aqui caso seja um Musico a ser contratado</p>
+
+            <nav>
+                <ul>
+                    <li><a href="./formularioIniUsu.html" class="button">Registrar</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+    <img class="a1" src="../Images/3bolasnosaco.png" alt="Descrição da imagem 1">
+
+
+
+</body></html>
